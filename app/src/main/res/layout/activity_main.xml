@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FB"
+    android:padding="24dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My AI Call"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Language Selection Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="18dp"
+        android:spacing="8dp">
+
+        <Button
+            android:id="@+id/enButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="EN"
+            android:textAllCaps="false"
+            android:backgroundTint="#DDEAFE"
+            android:textColor="#0F172A"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/bnButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="বাংলা"
+            android:textAllCaps="false"
+            android:backgroundTint="#DBFCE7"
+            android:textColor="#0F172A"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/hiButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="हिंदी"
+            android:textAllCaps="false"
+            android:backgroundTint="#FDE7F3"
+            android:textColor="#0F172A"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="24dp"
+        android:elevation="8dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Voice Support"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a language and start your call."
+            android:textSize="16sp"
+            android:textColor="#475569"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp" />
+
+        <Button
+            android:id="@+id/startCallButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Start Call"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="22dp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+</LinearLayout>

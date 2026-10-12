@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--
+   Sample backup rules file; uncomment and customize as needed.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored if the device is running Android 12 or later.
+    -->
+    <include domain="sharedpref" path="." />
+    <exclude domain="sharedpref" path="device_info.xml" />
+</full-backup-content>
